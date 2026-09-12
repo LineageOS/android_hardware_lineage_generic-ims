@@ -15,3 +15,6 @@ PRODUCT_PACKAGES += \
     QualifiedNetworksService
 
 $(call inherit-product, packages/modules/ImsMedia/imsmedia.mk)
+
+# Permissions
+PRODUCT_PACKAGES += android.hardware.telephony.ims.prebuilt.xml
