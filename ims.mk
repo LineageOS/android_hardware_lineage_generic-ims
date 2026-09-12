@@ -7,3 +7,6 @@ GENERIC_IMS_PATH := hardware/lineage/generic-ims
 
 # CarrierSettings
 PRODUCT_PACKAGES += CarrierSettings
+
+# IMS
+$(call inherit-product, packages/modules/ImsMedia/imsmedia.mk)
