@@ -1,0 +1,37 @@
+/*
+ * SPDX-FileCopyrightText: The LineageOS Project
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+android_app {
+    name: "CarrierSettings",
+    srcs: ["src/**/*.kt"],
+    platform_apis: true,
+    certificate: "platform",
+    system_ext_specific: true,
+    privileged: true,
+    static_libs: [
+        "androidx.preference_preference",
+        "carriersettings_proto",
+    ],
+    required: [
+        "CarrierSettingsOverlay",
+        "prebuilt_carrier_settings",
+        "privapp_permissions_com.android.carriersettings",
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp_permissions_com.android.carriersettings",
+    system_ext_specific: true,
+    relative_install_path: "permissions",
+    src: "com.android.carriersettings.xml",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "prebuilt_carrier_settings",
+    system_ext_specific: true,
+    relative_install_path: "CarrierSettings",
+    srcs: ["configs/*.pb"],
+}

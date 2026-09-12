@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    SPDX-FileCopyrightText: The LineageOS Project
+
+    SPDX-License-Identifier: Apache-2.0
+-->
+
+<resources>
+    <!-- The package name for the platform carrier config app, bundled with system image. -->
+    <string name="platform_carrier_config_package" translatable="false">com.android.carriersettings</string>
+</resources>

@@ -4,3 +4,6 @@
 #
 
 GENERIC_IMS_PATH := hardware/lineage/generic-ims
+
+# CarrierSettings
+PRODUCT_PACKAGES += CarrierSettings
