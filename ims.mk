@@ -16,5 +16,10 @@ PRODUCT_PACKAGES += \
 
 $(call inherit-product, packages/modules/ImsMedia/imsmedia.mk)
 
+# Overlay
+PRODUCT_PACKAGES += \
+    FrameworkResOverlayIms \
+    TelephonyOverlayIms
+
 # Permissions
 PRODUCT_PACKAGES += android.hardware.telephony.ims.prebuilt.xml
