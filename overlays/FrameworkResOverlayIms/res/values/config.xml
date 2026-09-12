@@ -7,6 +7,9 @@
     <!-- Flag specifying whether VoLTE is available on device -->
     <bool name="config_device_volte_available">true</bool>
 
+    <!-- Whether to use voip audio mode for ims call -->
+    <bool name="config_use_voip_mode_for_ims">true</bool>
+
     <!-- List of system components which are allowed to receive ServiceState entries in an
          un-sanitized form, even if the location toggle is off. This is intended ONLY for system
          components, such as the telephony stack, which require access to the full ServiceState for
