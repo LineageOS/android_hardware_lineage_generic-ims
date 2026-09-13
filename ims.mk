@@ -23,3 +23,6 @@ PRODUCT_PACKAGES += \
 
 # Permissions
 PRODUCT_PACKAGES += android.hardware.telephony.ims.prebuilt.xml
+
+# SEPolicy
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(GENERIC_IMS_PATH)/sepolicy/system_ext/private
