@@ -15,7 +15,8 @@ android_app {
         "carriersettings_proto",
     ],
     required: [
-        "CarrierSettingsOverlay",
+        "TelephonyOverlayCarrierSettings",
+        "TelephonyProviderOverlayCarrierSettings",
         "prebuilt_carrier_settings",
         "privapp_permissions_com.android.carriersettings",
     ],

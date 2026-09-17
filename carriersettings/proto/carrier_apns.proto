@@ -1,0 +1,79 @@
+/*
+ * SPDX-FileCopyrightText: The LineageOS Project
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+edition = "2024";
+
+package com.android.carriersettings;
+
+message CarrierApns {
+  repeated ApnItem apn = 2;
+}
+
+message ApnItem {
+  enum ApnType {
+    APN_TYPE_ALL = 0;
+    APN_TYPE_DEFAULT = 1;
+    APN_TYPE_MMS = 2;
+    APN_TYPE_SUPL = 3;
+    APN_TYPE_DUN = 4;
+    APN_TYPE_HIPRI = 5;
+    APN_TYPE_FOTA = 6;
+    APN_TYPE_IMS = 7;
+    APN_TYPE_CBS = 8;
+    APN_TYPE_IA = 9;
+    APN_TYPE_EMERGENCY = 10;
+    APN_TYPE_XCAP = 11;
+    APN_TYPE_UT = 12;
+    APN_TYPE_RCS = 13;
+    APN_TYPE_MCX = 14;
+    APN_TYPE_VSIM = 15;
+    APN_TYPE_BIP = 16;
+    APN_TYPE_ENTERPRISE = 17;
+    APN_TYPE_OEM_PAID = 18;
+    APN_TYPE_OEM_PRIVATE = 19;
+  }
+  string name = 1;
+  string value = 2;
+  repeated ApnType type = 3;
+  string bearer_bit_mask = 4 [default = "0"];
+  string server = 5;
+  string proxy = 6;
+  string port = 7;
+  string user = 8;
+  string password = 9;
+  int32 auth_type = 10 [default = -1];
+  string mmsc = 11;
+  string mmsc_proxy = 12;
+  string mmsc_proxy_port = 13;
+  enum Protocol {
+    PROTOCOL_IP = 0;
+    PROTOCOL_IPV6 = 1;
+    PROTOCOL_IPV4V6 = 2;
+    PROTOCOL_NON_IP = 4;
+    PROTOCOL_UNSTRUCTURED = 5;
+  }
+  Protocol protocol = 14;
+  Protocol roaming_protocol = 15;
+  int32 mtu = 16;
+  int32 profile_id = 17;
+  int32 max_conns = 18;
+  int32 wait_time = 19;
+  int32 max_conns_time = 20;
+  bool modem_cognitive = 22;
+  bool user_visible = 23 [default = true];
+  bool user_editable = 24 [default = true];
+  int32 apn_set_id = 25;
+  enum Skip464XLAT {
+    SKIP464XLAT_DEFAULT = 0;
+    SKIP464XLAT_DISABLE = 1;
+    SKIP464XLAT_ENABLE = 2;
+  }
+  Skip464XLAT skip464xlat = 26;
+  string lingering_network_type_bitmask = 27;
+  bool always_on = 28;
+  int32 mtu_v6 = 29;
+  int32 infrastructure_bitmask = 30 [default = 3];
+  int32 esim_bootstrap_provisioning = 31;
+}

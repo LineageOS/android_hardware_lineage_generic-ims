@@ -5,7 +5,7 @@
  */
 
 runtime_resource_overlay {
-    name: "CarrierSettingsOverlay",
+    name: "TelephonyOverlayCarrierSettings",
     product_specific: true,
     sdk_version: "current",
 }
