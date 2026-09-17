@@ -9,11 +9,12 @@ edition = "2024";
 package com.android.carriersettings;
 
 import "google/protobuf/timestamp.proto";
+import "carrier_apns.proto";
 
 message CarrierSettings {
   string canonical_name = 1;
   int64 version = 2;
-  // CarrierApns apns = 3;
+  CarrierApns apns = 3;
   CarrierConfig configs = 4;
   // VendorConfigs vendor_configs = 6;
   google.protobuf.Timestamp last_update = 8;

@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
     <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
     <application android:allowBackup="false"
          android:directBootAware="true">
         <service android:name=".CarrierConfigService"
@@ -20,10 +21,20 @@
                 <action android:name="android.service.carrier.CarrierService"/>
             </intent-filter>
         </service>
+        <service android:name=".ApnSourceService"
+             android:permission="android.permission.WRITE_APN_SETTINGS"
+             android:exported="true">
+        </service>
         <receiver android:name=".BootCompletedReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".CarrierConfigChangedReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.telephony.action.CARRIER_CONFIG_CHANGED" />
             </intent-filter>
         </receiver>
     </application>

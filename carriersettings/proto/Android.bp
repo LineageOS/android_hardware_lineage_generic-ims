@@ -9,6 +9,7 @@ java_library {
     proto: {
         type: "lite",
         include_dirs: ["external/protobuf/src"],
+        local_include_dirs: ["."],
     },
     srcs: [
         "*.proto",

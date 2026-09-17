@@ -73,12 +73,16 @@ class PbConfigLoader {
                 return it
             }
             val carrierList = CarrierList.parseFrom(openPbFile("carrier_list"))
-            return carrierList.find(id)?.let { canonicalName ->
-                readSettingsFromAssets(canonicalName)?.let {
-                    cachedCarriers[id] = it
-                    it
+            return carrierList.find(id)?.let {
+                readSettingsFromAssets(it.first)?.also { settings ->
+                    cachedCarriers[id] = settings
                 }
             }
+        }
+
+        fun getCarrierId(id: ExtendedCarrierIdentifier): Pair<String, CarrierId>? {
+            Log.i(TAG, "getCarrierId")
+            return CarrierList.parseFrom(openPbFile("carrier_list")).find(id)
         }
     }
 }
