@@ -5,6 +5,9 @@
 
 GENERIC_IMS_PATH := hardware/lineage/generic-ims
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(GENERIC_IMS_PATH)
+
 # CarrierSettings
 PRODUCT_PACKAGES += CarrierSettings
 
