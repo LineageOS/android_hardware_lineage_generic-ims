@@ -16,6 +16,24 @@
       "message": "Not a fixup, and across other trees the Soong namespace is _frequently_ up top, just like path declarations.",
       "revId": "b52341d99e6544195b9284bb2ee5539322cf16b4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cbcf9ec4_11cfaef4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36705
+      },
+      "writtenOn": "2026-10-06T15:31:20Z",
+      "side": 1,
+      "message": "\u003e across other trees the Soong namespace is frequently up top\n\nThere is no regression when putting it somewhere lower (just like with PRODUCT_PACKAGES) so IMO we should sort it too.",
+      "parentUuid": "0f80a9f4_61ef2578",
+      "revId": "b52341d99e6544195b9284bb2ee5539322cf16b4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
