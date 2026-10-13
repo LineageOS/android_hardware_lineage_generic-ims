@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d9364dd1_b2e30cf2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-10-13T23:14:38Z",
+      "side": 1,
+      "message": "Why? We are using the common apn xml on purpose and not relying on the ones from protobuf.",
+      "revId": "e34de5a8aad29fa61f93e051daec7e7da7aa696e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
