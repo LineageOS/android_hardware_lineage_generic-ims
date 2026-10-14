@@ -16,6 +16,24 @@
       "message": "Why? We are using the common apn xml on purpose and not relying on the ones from protobuf.",
       "revId": "e34de5a8aad29fa61f93e051daec7e7da7aa696e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd3dd9ea_9b33da68",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34207
+      },
+      "writtenOn": "2026-10-14T10:51:59Z",
+      "side": 1,
+      "message": "The main benefit i see is that these are (more or less) guaranteed to work, so we wouldn\u0027t have to rely on bug reports and/or contributions.",
+      "parentUuid": "d9364dd1_b2e30cf2",
+      "revId": "e34de5a8aad29fa61f93e051daec7e7da7aa696e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
