@@ -39,6 +39,30 @@
       },
       "revId": "fd8bdfcd3e3e5886ff9309b762dc9a62a52e21ef",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "94226dd1_197ca2b1",
+        "filename": "carriersettings/res/xml/carrier_config_override.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 32034
+      },
+      "writtenOn": "2026-10-15T18:35:28Z",
+      "side": 1,
+      "message": "e.g., https://github.com/ExyHyperBrick/android_device_samsung_exynos9810-common/commit/c386c0516b98b5471ae804f091b103b2759e2b33",
+      "parentUuid": "2742a4e6_62585639",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 2
+      },
+      "revId": "fd8bdfcd3e3e5886ff9309b762dc9a62a52e21ef",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
