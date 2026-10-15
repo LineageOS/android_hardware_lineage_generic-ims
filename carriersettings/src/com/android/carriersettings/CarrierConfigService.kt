@@ -12,6 +12,7 @@ import android.service.carrier.CarrierService
 import android.telephony.CarrierConfigManager
 import android.telephony.SubscriptionManager
 import android.util.Log
+import com.android.internal.util.XmlUtils
 import com.google.protobuf.Timestamp
 import java.time.Instant
 import java.time.ZoneOffset
@@ -83,6 +84,15 @@ class CarrierConfigService : CarrierService() {
             }.onFailure {
                 Log.w(TAG, "Unable to read carrier settings", it)
             }
+        }
+        // Device constraints must take precedence over the protobuf settings.
+        runCatching {
+            resources.getXml(R.xml.vendor).use { parser ->
+                XmlUtils.beginDocument(parser, "carrier_config")
+                bundle.putAll(PersistableBundle.restoreFromXml(parser))
+            }
+        }.onFailure {
+            Log.e(TAG, "Unable to read device settings", it)
         }
         return bundle
     }
