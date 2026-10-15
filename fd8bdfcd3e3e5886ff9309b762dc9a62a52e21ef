@@ -63,6 +63,30 @@
       },
       "revId": "fd8bdfcd3e3e5886ff9309b762dc9a62a52e21ef",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3d10cd8a_1bba0504",
+        "filename": "carriersettings/res/xml/carrier_config_override.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 32034
+      },
+      "writtenOn": "2026-10-15T20:04:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "94226dd1_197ca2b1",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 2
+      },
+      "revId": "fd8bdfcd3e3e5886ff9309b762dc9a62a52e21ef",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
