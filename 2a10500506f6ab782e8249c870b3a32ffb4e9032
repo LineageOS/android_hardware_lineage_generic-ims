@@ -48,6 +48,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6ad1141_01ba65e4",
+        "filename": "carriersettings/AndroidManifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 32034
+      },
+      "writtenOn": "2026-10-15T15:32:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7d1336ad_329ef965",
+      "range": {
+        "startLine": 7,
+        "startChar": 26,
+        "endLine": 7,
+        "endChar": 27
+      },
+      "revId": "2a10500506f6ab782e8249c870b3a32ffb4e9032",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1a7c268a_7bdbff33",
@@ -85,6 +109,30 @@
       "side": 1,
       "message": "valid point (:",
       "parentUuid": "1a7c268a_7bdbff33",
+      "range": {
+        "startLine": 8,
+        "startChar": 26,
+        "endLine": 8,
+        "endChar": 31
+      },
+      "revId": "2a10500506f6ab782e8249c870b3a32ffb4e9032",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ddc1c5de_af43e5d9",
+        "filename": "carriersettings/AndroidManifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 32034
+      },
+      "writtenOn": "2026-10-15T15:32:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "38cbb5e5_fc315910",
       "range": {
         "startLine": 8,
         "startChar": 26,
