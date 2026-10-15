@@ -26,6 +26,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "7d1336ad_329ef965",
+        "filename": "carriersettings/AndroidManifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 32034
+      },
+      "writtenOn": "2026-10-15T15:23:32Z",
+      "side": 1,
+      "message": "derp",
+      "parentUuid": "81b21620_8e3f0e35",
+      "range": {
+        "startLine": 7,
+        "startChar": 26,
+        "endLine": 7,
+        "endChar": 27
+      },
+      "revId": "2a10500506f6ab782e8249c870b3a32ffb4e9032",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "1a7c268a_7bdbff33",
         "filename": "carriersettings/AndroidManifest.xml",
         "patchSetId": 1
@@ -37,6 +61,30 @@
       "writtenOn": "2026-10-15T15:16:05Z",
       "side": 1,
       "message": "Might want to bump this as well.",
+      "range": {
+        "startLine": 8,
+        "startChar": 26,
+        "endLine": 8,
+        "endChar": 31
+      },
+      "revId": "2a10500506f6ab782e8249c870b3a32ffb4e9032",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "38cbb5e5_fc315910",
+        "filename": "carriersettings/AndroidManifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 32034
+      },
+      "writtenOn": "2026-10-15T15:23:32Z",
+      "side": 1,
+      "message": "valid point (:",
+      "parentUuid": "1a7c268a_7bdbff33",
       "range": {
         "startLine": 8,
         "startChar": 26,
