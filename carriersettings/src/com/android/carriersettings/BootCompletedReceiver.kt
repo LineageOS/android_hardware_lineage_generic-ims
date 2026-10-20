@@ -25,7 +25,9 @@ class BootCompletedReceiver : BroadcastReceiver() {
             Log.e(TAG, "context is null!")
             return
         }
+        var shouldReloadConfigs = false
         val preferences = PreferenceManager.getDefaultSharedPreferences(context)
+        // Check the version of the protobuf configs
         val savedListVersion = preferences.getLong("list_version", 0)
         val savedOthersVersion = preferences.getLong("others_version", 0)
         val currentVersion = PbConfigLoader.getVersion()
@@ -35,6 +37,24 @@ class BootCompletedReceiver : BroadcastReceiver() {
                 "Carrier settings updated! list: $savedListVersion -> ${currentVersion.first}, " +
                         "others: $savedOthersVersion -> ${currentVersion.second}"
             )
+            shouldReloadConfigs = true
+        }
+
+        // Check the hash of the override
+        // Internally, Resources.getXml() uses a string type, so use that here as we can't directly
+        // hash the XML object nor the PersistableBundle it represents.
+        val currentOverrideHash =
+            context.resources.getString(R.xml.carrier_config_override).hashCode()
+        val savedOverrideHash = preferences.getInt("override_hash", 0)
+        if (currentOverrideHash != savedOverrideHash) {
+            Log.i(
+                TAG,
+                "Carrier config override changed! hash: $savedOverrideHash -> $currentOverrideHash"
+            )
+            shouldReloadConfigs = true
+        }
+
+        if (shouldReloadConfigs) {
             val carrierConfigManager = context.getSystemService(CarrierConfigManager::class.java)
             context.getSystemService(SubscriptionManager::class.java).activeSubscriptionIdList.forEach {
                 carrierConfigManager.notifyConfigChangedForSubId(it)
@@ -42,6 +62,7 @@ class BootCompletedReceiver : BroadcastReceiver() {
             preferences.edit {
                 putLong("list_version", currentVersion.first)
                 putLong("others_version", currentVersion.second)
+                putInt("override_hash", currentOverrideHash)
             }
         }
     }
