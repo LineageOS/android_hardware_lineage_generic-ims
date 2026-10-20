@@ -20,6 +20,9 @@ import java.time.ZoneOffset
 class CarrierConfigService : CarrierService() {
     companion object {
         const val TAG = "CarrierConfigService"
+        private val internalConfigOverride = PersistableBundle().apply {
+            putBoolean("imsvoice.audio_evs_support_bool", false)
+        }
     }
 
     private fun addVersionString(config: PersistableBundle, settings: CarrierSettings) {
@@ -85,6 +88,7 @@ class CarrierConfigService : CarrierService() {
                 Log.w(TAG, "Unable to read carrier settings", it)
             }
         }
+        bundle.putAll(internalConfigOverride)
         // Device constraints must take precedence over the protobuf settings.
         runCatching {
             resources.getXml(R.xml.carrier_config_override).use { parser ->

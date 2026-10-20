@@ -4,8 +4,8 @@
     SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-     android:versionCode="2"
-     android:versionName="1.1.0"
+     android:versionCode="3"
+     android:versionName="1.2.0"
      package="com.android.carriersettings">
 
     <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
