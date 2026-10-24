@@ -16,6 +16,24 @@
       "message": "While these are fresher (the timestamp of the carrier list is newer), the version is lower: 80000000582 -\u003e 79000000590\n\nI can\u0027t say for sure that this is an upgrade. Can you do from kodiak?",
       "revId": "b0ff51c6a6648279c98a6f5657cba2fefc425a9d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "92414c8e_300c3517",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2026-10-24T21:08:27Z",
+      "side": 1,
+      "message": "no, we track CP3A instead of CD1A as requested by mike",
+      "parentUuid": "f6f7a8e8_6d08a038",
+      "revId": "b0ff51c6a6648279c98a6f5657cba2fefc425a9d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
