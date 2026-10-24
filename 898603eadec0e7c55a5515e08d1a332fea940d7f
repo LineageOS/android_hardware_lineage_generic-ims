@@ -16,6 +16,24 @@
       "message": "needs V+",
       "revId": "898603eadec0e7c55a5515e08d1a332fea940d7f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d7ce9d80_762d8854",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35850
+      },
+      "writtenOn": "2026-10-24T10:54:05Z",
+      "side": 1,
+      "message": "Test: boot with a config without disabling QoS precondition, test IMS -\u003e broken; change config to disable it (509903), test IMS -\u003e working; platform: universal9830.",
+      "parentUuid": "78f7a561_a3396ec5",
+      "revId": "898603eadec0e7c55a5515e08d1a332fea940d7f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
