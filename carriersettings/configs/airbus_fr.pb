@@ -1,5 +1,5 @@
 
-	airbus_frƒÀü‚ª
+	airbus_fr‚¬‘¦¦
 aircraftaircraftpx
 
 industrialninPpx
@@ -9,4 +9,4 @@ industrialninPpx
 mcsmcspx"q+
 #carrier_nr_availabilities_int_array:
 cellular_usage_setting_int"
-show_4g_for_lte_data_icon_bool(BÉıŠÊ
+show_4g_for_lte_data_icon_bool(Bÿ–Ò¹

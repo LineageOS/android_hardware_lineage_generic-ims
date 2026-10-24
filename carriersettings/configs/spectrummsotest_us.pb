@@ -1,5 +1,5 @@
 
-spectrummsotest_usƒÀü‚ª7
+spectrummsotest_us¬‘¦¦7
 XM LAB1internetp
 XM LAB1admin.comcastp"ûC
 ?always_show_primary_signal_bar_in_opportunistic_network_boolean(9
@@ -15,4 +15,4 @@
 /opportunistic_network_entry_threshold_rssnr_int
 :
 -opportunistic_network_exit_threshold_rsrp_intˆÿÿÿÿÿÿÿÿ2
-.opportunistic_network_exit_threshold_rssnr_int	BÉıŠÊ
+.opportunistic_network_exit_threshold_rssnr_int	B²ãş¶
