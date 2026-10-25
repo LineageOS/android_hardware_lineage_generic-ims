@@ -52,6 +52,24 @@
       "parentUuid": "d7ce9d80_762d8854",
       "revId": "898603eadec0e7c55a5515e08d1a332fea940d7f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "13b53d8d_bd759de7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35850
+      },
+      "writtenOn": "2026-10-25T10:59:00Z",
+      "side": 1,
+      "message": "I didn\u0027t want to take over as the uploader or break the votes",
+      "parentUuid": "b4b2c404_1f06c573",
+      "revId": "898603eadec0e7c55a5515e08d1a332fea940d7f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
